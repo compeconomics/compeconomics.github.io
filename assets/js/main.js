@@ -1,9 +1,3 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	skel.breakpoints({
@@ -22,12 +16,12 @@
 			$main = $('#main');
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+			// $body.addClass('is-loading');
 
 			$window.on('load', function() {
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
-				}, 100);
+				}, 0);
 			});
 
 		// Fix: Placeholder polyfill.
@@ -137,3 +131,10 @@
 	});
 
 })(jQuery);
+
+function main(){
+	let page_view = pageViewModule();
+	page_view.onClickHyper1();
+	page_view.onClickHyper2();
+} 
+main();

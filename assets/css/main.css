@@ -49,7 +49,6 @@
 	}
 
 .collapsible {
-  /* background-color: #777; */
   color: white;
   cursor: pointer;
   padding: 10px;
@@ -57,7 +56,6 @@
   border: none;
   text-align: left;
   outline: none;
-  /* font-size: 15px; */
 }
 
 .active, .collapsible:hover {
@@ -69,7 +67,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  /* background-color: #f1f1f1; */
 }
 
 
@@ -128,12 +125,8 @@
 		margin: 0em 0 -1px 0em;
 	}
 
-	.row > * {
-		padding: 0 0 0 1.5em;
-	}
-
 	.row {
-		margin: 0 0 -1px -1.5em;
+		margin: 0 0 -1px 2em;
 	}
 
 	.row.uniform > * {
@@ -340,14 +333,6 @@
 	}
 
 	@media screen and (max-width: 1680px) {
-
-		.row > * {
-			padding: 0 0 0 1.5em;
-		}
-
-		.row {
-			margin: 0 0 -1px -1.5em;
-		}
 
 		.row.uniform > * {
 			padding: 1.5em 0 0 1.5em;
@@ -556,14 +541,6 @@
 
 	@media screen and (max-width: 1280px) {
 
-		.row > * {
-			padding: 0 0 0 1.5em;
-		}
-
-		.row {
-			margin: 0 0 -1px -1.5em;
-		}
-
 		.row.uniform > * {
 			padding: 1.5em 0 0 1.5em;
 		}
@@ -771,12 +748,8 @@
 
 	@media screen and (max-width: 980px) {
 
-		.row > * {
-			padding: 0 0 0 1.5em;
-		}
-
 		.row {
-			margin: 0 0 -1px -1.5em;
+			margin: 0 0 -1px 0em;
 		}
 
 		.row.uniform > * {
@@ -984,14 +957,17 @@
 
 	}
 
+	@media screen and (max-width: 857px) {
+
+		.row > * {
+			padding: 0 0 0 0em;
+		}
+	}
+
 	@media screen and (max-width: 736px) {
 
 		.row > * {
-			padding: 0 0 0 1em;
-		}
-
-		.row {
-			margin: 0 0 -1px -1em;
+			padding: 0 0 0 0em;
 		}
 
 		.row.uniform > * {
@@ -1202,11 +1178,11 @@
 	@media screen and (max-width: 480px) {
 
 		.row > * {
-			padding: 0 0 0 1em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
-			margin: 0 0 -1px -1em;
+			margin: 0 0 -1px 1em;
 		}
 
 		.row.uniform > * {
@@ -1414,14 +1390,21 @@
 
 	}
 
+	@media screen and (max-width: 435px) {
+
+		.row > * {
+			padding: 0 0 0 0em;
+		}
+	}
+
 	@media screen and (max-width: 360px) {
 
 		.row > * {
-			padding: 0 0 0 1em;
+			padding: 0 0 0 0em;
 		}
 
 		.row {
-			margin: 0 0 -1px -1em;
+			margin: 0 0 -1px 0.5em;
 		}
 
 		.row.uniform > * {
@@ -1925,9 +1908,9 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
-		min-width: 11em;
+		height: 2.1em;
+		line-height: 2.1em;
+		min-width: 15em;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
@@ -1999,9 +1982,8 @@
 			input[type="button"],
 			button,
 			.button {
-				min-width: 0;
+				/* min-width: 0; */
 			}
-
 		}
 
 	input[type="submit"],
@@ -2630,7 +2612,7 @@
 						}
 
 						ul.actions li > * {
-							width: 100%;
+							/* width: 100%; */
 							margin: 0 !important;
 						}
 
@@ -3194,7 +3176,7 @@
 			}
 
 				#header.alt {
-					padding: 4em 4em 1.5em 4em ;
+					padding: 4em 4em 1.5em 0em ;
 				}
 				.wisc-logo{
 					width: 60%;
@@ -3244,14 +3226,6 @@
 					letter-spacing: 0;
 				}
 
-					/*#header p br {
-						display: none;
-					}*/
-
-				#header.alt {
-					padding: 4em 2em 1em 2em ;
-				}
-
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
@@ -3279,7 +3253,7 @@
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 4em 1.5em 1em 0em ;
 				}
 
 		}
@@ -3291,7 +3265,7 @@
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 3.5em 1em 0.5em 0em ;
 				}
 
 		}
@@ -3408,7 +3382,7 @@
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: rgba(247, 247, 247, 0.95);
 						box-shadow: none;
 					}
 
@@ -3427,7 +3401,7 @@
 			}
 
 				#nav.alt ul li a {
-					font-size: 0.9em;
+					font-size: 1em;
 				}
 
 		@media screen and (max-width: 736px) {
@@ -3808,7 +3782,7 @@
 
 		#footer .copyright {
 			width: 100%;
-			margin: 3em 0 1em 0;
+			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
 		}
@@ -3823,7 +3797,7 @@
 	display: inline-block;
 	width: 20%;
 	max-width: 300px;
-	min-width: 200px;
+	min-width: 210px;
 }
 
 .footer-contact-section {
@@ -3844,7 +3818,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 0em 4em ;
+				padding: 4em 4em 2em 4em ;
 			}
 
 		}
@@ -3865,7 +3839,7 @@
 				}
 
 				#footer .copyright {
-					/* text-align: left; */
+					text-align: left;
 				}
 
 		}
@@ -3916,4 +3890,138 @@
 				max-width: 90%;
 			}
 
+		}
+		.column {
+			float: left;
+			width: 30%;
+		  }
+		  
+		  /* Clear floats after the columns */
+		  .row:after {
+			content: "";
+			display: table;
+			clear: both;
+		  }
+		  .row {
+			display: flex;
+		  }
+		  
+		  .column {
+			/* flex: 30%; */
+		  }
+		  
+	
+		@media screen and (max-width: 736px) {
+	
+			.row {
+				display:table-row;
+			}
+			.col-left{
+				float: left;
+    display:table;
+    vertical-align:middle;
+    width: 100%;
+			}
+			.col-right {
+				float: left;
+    display:table;
+    vertical-align:middle;
+    width: 100%;
+			}
+			.into{
+				text-align: center !important;
+			}
+		}
+	
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 10px;
+			border-radius: 3px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 20px;
+			transition: 0.5s;
+			position: relative;
+		}
+		
+		.accordion :hover{
+			cursor: pointer;
+			color: blue
+		}
+		
+		.active, .accordion:hover {
+			/* background-color: #ccc; */
+		}
+		
+		.accordion:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			position: absolute;
+			right: 3%;
+			bottom:25%;
+		}
+		
+		.activeaccordion:after {
+			content: "\2212";
+		}
+		
+		.accordion-panel {
+			padding: 0 18px;
+			/* background-color: #f7f7f7; */
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.5s ease-out;
+			line-height: 0.4cm;
+		}
+		
+		.accordion-container{
+			text-align: left;
+			margin-right: 15%
+		}
+		
+		.dropdown-container{
+			transition:max-height 5s ease-out;
+			width:100%;
+			height:auto;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: inherit;
+			justify-content: flex-start;
+		
+		}
+		
+		.dropdown-container :hover{
+			cursor: pointer;
+		}
+		
+		.drop-down1{
+			transition:max-height 5s ease-out;
+			padding-right: 10px;
+			width:auto;
+			color:#7f7f7f;
+			font-size:15px;
+			font-family: roboto, sans-serif;
+		
+		}
+		
+		.teaching-container{
+			padding-top: 10px;
+		}
+		
+		.teaching-info{
+			margin: 0;
+			padding-top: 10px;
+			line-height: 1cm;
+			font-weight: 400;
+			padding-bottom: 10px;
+		}
+		
+		#title-bullet{
+			display: flex;
+			justify-content: center;
 		}
